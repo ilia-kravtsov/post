@@ -1,0 +1,23 @@
+@import '../general/mixin';
+@import '../general/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--background-second);
+  width: auto;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.phrase {
+  margin: 15px 0;
+}
+
+.text {
+  line-height: 32px;
+  margin-left: 10px;
+}

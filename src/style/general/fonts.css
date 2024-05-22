@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto"),
+    url("../../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "PassionOne";
+    src: local("PassionOne"),
+    url("../../fonts/Passion One/PassionOne-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "PassionOne";
+    src: local("PassionOne"),
+    url("../../fonts/Passion One/PassionOne-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "CormorantGaramond";
+    src: local("CormorantGaramond"),
+    url("../../fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "CormorantGaramond";
+    src: local("CormorantGaramond"),
+    url("../../fonts/Cormorant_Garamond/CormorantGaramond-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "CormorantGaramond";
+    src: local("CormorantGaramond"),
+    url("../../fonts/Cormorant_Garamond/CormorantGaramond-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "CormorantGaramond";
+    src: local("CormorantGaramond"),
+    url("../../fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+

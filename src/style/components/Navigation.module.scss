@@ -1,0 +1,29 @@
+@import '../general/mixin';
+@import '../general/variables';
+
+.navigation {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 96vw;
+  background-color: var(--background-second);
+  padding: 5px;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.navigation__link {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--background-second);
+  transition: background-color .4s, border .3s;
+}
+
+.navigation__link:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.active {
+  background-color: var(--accent-color);
+}

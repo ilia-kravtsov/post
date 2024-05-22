@@ -1,0 +1,179 @@
+@import '../general/mixin';
+@import '../general/variables';
+@import '../general/fonts.css';
+@import '../general/reset.css';
+
+.app {
+  background-color: var(--background-first);
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  color: var(--font-color);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'PassionOne', sans-serif;
+  font-weight: 400;
+
+  @media screen and (max-width: 700px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 300px) {
+    font-size: 16px;
+  }
+}
+
+.app__logo {
+  height: 70px;
+  display: block;
+
+  @media screen and (max-width: 1200px) {
+    height: 60px;
+  }
+}
+
+.app__logo * {
+  fill: var(--font-color);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app__logo {
+    animation: app_logo_spin infinite 10s linear;
+  }
+}
+
+.app__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+  padding: 15px 0;
+}
+
+@keyframes app_logo_spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 96%;
+}
+
+.app__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+  width: 96%;
+  margin: 60px 0 30px 0;
+
+  @media screen and (max-width: 700px) {
+    height: 20vh;
+  }
+  @media screen and (max-width: 270px) {
+    display: none;
+  }
+}
+
+.getHireLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--font-color);
+  text-decoration: none;
+  transition-duration: 1s;
+  transition-property: all;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:hover .getHireLink__container {
+    border-radius: 50px;
+    background-color: var(--accent-color);
+  }
+}
+
+.getHireLink__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  width: 300px;
+  overflow: hidden;
+  transition-duration: 0.6s;
+  transition-property: all;
+  border: 1px solid var(--accent-color);
+  @media screen and (max-width: 330px) {
+    width: 250px;
+  }
+}
+
+.getHireLink__title {
+  font-size: 20px;
+  transition-duration: 1s;
+  transition-property: all;
+  white-space: nowrap;
+  animation: marquee 3s infinite linear;
+  overflow: hidden;
+  width: 100%;
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%)
+    }
+    100% {
+      transform: translateX(-100%)
+    }
+  }
+}
+
+.getHireLink__icon {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: auto;
+  background-color: var(--accent-color);
+  z-index: 1;
+
+  @media screen and (max-width: 900px) {
+    width: 50px;
+    height: 50px;
+  }
+  @media screen and (max-width: 330px) {
+    .getHireLink__icon {
+      width: 44px;
+      height: 44px;
+    }
+  }
+}
+
+/* Scrollbar settings*/
+::-webkit-scrollbar {
+  width: 10px; /* Ширина скролла */
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background-second); /* Цвет фона скролла */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color); /* Цвет ползунка скролла */
+}
+
+* {
+  scrollbar-width: thin; /* Толщина скролла */
+  scrollbar-color: var(--accent-color) var(--background-second); /* Цвет ползунка и скролла */
+}
