@@ -4,7 +4,7 @@ import {Navigation} from "./Navigation";
 import {Route, Routes} from "react-router-dom";
 
 function App() {
-//
+
     return (
         <div className={s.app}>
             <header className={s.app__header}>
@@ -20,7 +20,7 @@ function App() {
             <main className={s.app__body}>
                 <Navigation/>
                 <Routes>
-                    <Route path="/" element={<Calculation dasv={true}/>}></Route>
+                    <Route path="/post" element={<Calculation dasv={true}/>}></Route>
                     <Route path="/dasv" element={<Calculation dasv={true}/>}></Route>
                     <Route path="/dask" element={<Calculation dasv={false}/>}></Route>
                 </Routes>
