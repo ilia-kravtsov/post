@@ -20,7 +20,7 @@ function App() {
             <main className={s.app__body}>
                 <Navigation/>
                 <Routes>
-                    <Route path="/post" element={<Calculation dasv={true}/>}></Route>
+                    <Route path="/post/" element={<Calculation dasv={true}/>}></Route>
                     <Route path="/dasv" element={<Calculation dasv={true}/>}></Route>
                     <Route path="/dask" element={<Calculation dasv={false}/>}></Route>
                 </Routes>
