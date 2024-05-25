@@ -58,7 +58,7 @@ const manifestForPlugin: Partial<VitePWAOptions> = {
 }
 
 export default defineConfig({
-  plugins: [react(), reactRefresh(), VitePWA(manifestForPlugin), ],
+  plugins: [react(), reactRefresh(), VitePWA(manifestForPlugin)],
   server: {
     open: true,
   },
