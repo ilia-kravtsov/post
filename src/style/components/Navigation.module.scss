@@ -13,6 +13,16 @@
   margin-bottom: 20px;
 }
 
+.navigation__pwa {
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform .3s;
+}
+
+.navigation__pwa:active {
+  transform: scale(0.95);
+}
+
 .navigation__link {
   padding: 10px;
   border-radius: 5px;

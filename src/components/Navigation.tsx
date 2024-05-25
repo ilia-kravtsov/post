@@ -10,6 +10,7 @@ export const Navigation = () => {
             <NavLink to="/dask" className={({ isActive }) => isActive ? `${s.navigation__link} ${s.active}` : s.navigation__link}>
                 ДАСК
             </NavLink>
+            <button className={s.navigation__pwa} id={'pwa'}>PWA</button>
         </div>
     );
 };
