@@ -12,37 +12,37 @@ const manifestForPlugin: Partial<VitePWAOptions> = {
     description: "An app to calculate the pressure and the time for firefighters",
     icons: [
       {
-        "src": "./public/maskable_196.png",
+        "src": "/public/maskable_196.png",
         "sizes": "196x196",
         "type": "image/png",
         "purpose": "maskable"
       },
       {
-        "src": "./public/calculator_144.png",
+        "src": "/public/calculator_144.png",
         "sizes": "144x144",
         "type": "image/png",
         "purpose": "any"
       },
       {
-        "src": "./public/calculator_192.png",
+        "src": "/public/calculator_192.png",
         "sizes": "192x192",
         "type": "image/png",
         "purpose": "any"
       },
       {
-        "src": "./public/calculator_256.png",
+        "src": "/public/calculator_256.png",
         "sizes": "256x256",
         "type": "image/png",
         "purpose": "any"
       },
       {
-        "src": "./public/calculator_384.png",
+        "src": "/public/calculator_384.png",
         "sizes": "384x384",
         "type": "image/png",
         "purpose": "any"
       },
       {
-        "src": "./public/calculator_512.png",
+        "src": "/public/calculator_512.png",
         "sizes": "512x512",
         "type": "image/png",
         "purpose": "any"
