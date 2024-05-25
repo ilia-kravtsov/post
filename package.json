@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://ilia-kravtsov.github.io/post",
+  "homepage": "https://ilia-kravtsov.github.io/post",
   "scripts": {
     "predeploy": "pnpm run dist",
     "deploy": "gh-pages -d dist",
