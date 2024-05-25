@@ -9,23 +9,21 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 )
 
 let deferredPrompt: any;
-const btnAdd = document.getElementById('pwa')
+
+const btnAdd = document.getElementById('pwa');
 
 window.addEventListener('beforeinstallprompt', (e) => {
-    // Prevent Chrome 67 and earlier from automatically showing the prompt
     e.preventDefault();
-    // Stash the event so it can be triggered later.
     deferredPrompt = e;
-    // Update UI to notify the user they can add to home screen
     if (btnAdd) {
         btnAdd.style.display = 'block';
     }
 });
 
 if (btnAdd) {
+    console.log('btn found');
     btnAdd.addEventListener('click', (e: any) => {
-        // hide our user interface that shows our A2HS button
-        console.log(e)
+        console.log(e);
         btnAdd.style.display = 'none';
         // Show the prompt
         deferredPrompt.prompt();
@@ -40,5 +38,3 @@ if (btnAdd) {
         });
     });
 }
-
-

@@ -5,7 +5,7 @@ import reactRefresh from '@vitejs/plugin-react-refresh';
 
 const manifestForPlugin: Partial<VitePWAOptions> = {
   registerType: "prompt",
-  includeAssets: ["favicon.ico", "apple-touch-icon.png", "masked-icon.svg"],
+  includeAssets: ["favicon.ico", "apple-touch-icon.png", "masked-icon.svg", "service-worker.js"],
   manifest: {
     name: "post",
     short_name: "post",
@@ -58,7 +58,7 @@ const manifestForPlugin: Partial<VitePWAOptions> = {
 }
 
 export default defineConfig({
-  plugins: [react(), reactRefresh(), VitePWA(manifestForPlugin)],
+  plugins: [react(), reactRefresh(), VitePWA(manifestForPlugin), ],
   server: {
     open: true,
   },
